@@ -12,7 +12,6 @@ import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
 
 
-
 import { AppProvider } from './context/AppContext';
 import Currency from './components/Currency';
 
