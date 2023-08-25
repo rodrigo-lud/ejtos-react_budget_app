@@ -8,11 +8,14 @@ const Budget = () => {
 		const totalExpenses = expenses.reduce((total, item) => {
 			return (total += item.cost);
 		}, 0);
-
 		
 		if(val<totalExpenses) {
 			alert("You cannot reduce the budget that is already allocated!");
-		} else {
+		} 
+        else if (val>20000) {
+            alert("Budget cannot exceed " + currency + "20,000!");
+        }
+        else {
 			dispatch({
 				type: 'SET_BUDGET',
 				payload: val,
@@ -22,8 +25,8 @@ const Budget = () => {
 	
 	return (
 		<div className='alert alert-secondary'>
-            Budget {currency}
-			<input type="number" step="10" value={budget} onInput={(event)=>changeBudget(event.target.value)}></input>
+            Budget <b>{currency}</b>
+			<input type="number" step="10" max="20000" value={budget} onInput={(event)=>changeBudget(event.target.value)}></input>
 		</div>
 	);
 };

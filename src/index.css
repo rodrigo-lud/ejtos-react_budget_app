@@ -24,3 +24,11 @@ code {
 /* #inputBudget {
     background-color: #dfd8d8;
   } */
+
+#labelCenter {
+
+    display: flex;
+    align-items: center; /*centraliza horizontalmente
+    
+    justify-content: center; //cetraliza verticalmente */
+}
