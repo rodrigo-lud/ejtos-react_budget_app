@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#Currency {
+
+    --bs-alert-color: #0f5132;
+    --bs-alert-bg: #d1e7dd;
+    --bs-alert-border-color: #badbcc;
+    --bs-alert-border: 0px
+
+}
